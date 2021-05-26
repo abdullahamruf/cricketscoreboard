@@ -1,1 +1,432 @@
-
+#include<iostream>
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+#include <conio.h>
+ #include <cmath>
+ #include <cstdlib>
+ #include <ctime>
+using namespace std;
+void team1(){
+    char name[20];
+cout<<"enter team name"<<endl;
+cin>>name;
+ int t1run=0,i,j;
+ int v,run=0,s;
+ float run_rate=0;
+    int n;
+    cout<<" press 1........six run"<<endl;
+    cout<<" press 2........for run"<<endl;
+    cout<<" press 3........three run"<<endl;
+    cout<<" press 4........two run"<<endl;
+    cout<<" press 5........one run"<<endl;
+    cout<<" press 6........zero run"<<endl;
+    cout<<" press 7........no ball"<<endl;
+    cout<<" press 8........no ball+one run"<<endl;
+    cout<<" press 9........no ball+two run"<<endl;
+    cout<<" press 10........no ball+three run"<<endl;
+    cout<<" press 11........no ball+four "<<endl;
+    cout<<" press 12........no ball+six"<<endl;
+    cout<<" press 13........wide ball"<<endl;
+    cout<<" press 14........wide ball+one"<<endl;
+    cout<<" press 15........wide ball+two"<<endl;
+    cout<<" press 16........wide ball+three"<<endl;
+    cout<<" press 17........wide ball+four"<<endl;
+   cout<<"how many overs"<<endl<<endl;
+    scanf("%d",&v);
+    for(i=1;i<=v;i++){
+         cout<<" FOR OVER "<<i<<endl<<endl;
+            s=i;
+            for(j=1;j<=6;j++)
+        {
+           cout<<"give run"<<endl;
+           cin>>n;
+            if(n==1){
+                cout<<" ball no:"<<j<<endl;
+                cout<<"six runs"<<endl;
+                run=run+6;
+                cout<<"run"<<run<<endl<<endl;
+            }
+            else if(n==2){
+            cout<<" ball no:"<<j<<endl;
+            cout<<"four runs"<<endl;
+                run=run+4;
+          cout<<"run"<<run<<endl<<endl;
+            }
+            else if(n==3){
+                  cout<<" ball no:"<<j<<endl;
+                  cout<<"three runs"<<endl;
+                run=run+3;
+             cout<<"run"<<run<<endl<<endl;
+            }
+            else if(n==4){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"two runs"<<endl;
+                run=run+2;
+               cout<<"run"<<run<<endl<<endl;
+            }
+            else if(n==5){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"one run"<<endl;
+                run=run+1;
+                 cout<<"run"<<run<<endl<<endl;
+            }
+            else if(n==6){
+                cout<<" ball no:"<<j<<endl;
+                cout<<"zero run"<<endl;
+                run=run+0;
+                cout<<"run"<<run<<endl<<endl;
+            }
+            else if(n==7){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"no ball"<<endl;
+                run=run+1;
+               cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==8){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"no ball+1 run"<<endl;
+                run=run+2;
+              cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==9){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"no ball+two runs"<<endl;
+                run=run+3;
+                cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==10){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"no ball+three runs"<<endl;
+                run=run+4;
+              cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==11){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"no ball+four"<<endl;
+                run=run+5;
+                  cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==12){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"no+six runs"<<endl;
+                run=run+7;
+             cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==13){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"wide ball"<<endl;
+                run=run+1;
+             cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==14){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"wide ball+one run"<<endl;
+                run=run+2;
+                  cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==15){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"wide ball+two runs"<<endl;
+                run=run+3;
+                cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==16){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"wide ball+three runs"<<endl;
+                run=run+4;
+                cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==17){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"wide ball+four runs"<<endl;
+                run=run+5;
+                cout<<"run"<<run<<endl<<endl<<endl;
+                j--;
+            }
+else
+    cout<<"out of choice"<<endl;
+    }
+cout<<"After"<<endl<<i<<" over"<<endl<<"run is "<< run<<endl;
+    }
+    t1run=run;
+cout<<endl<<endl<<endl;
+cout<<"total run of this match"<<t1run<<endl<<endl;
+cout<<"over "<<v<<endl;
+cout<<"run rate"<<t1run/v<<endl<<endl;
+}
+void team2()
+{
+    char name[20];
+cout<<"enter team name"<<endl;
+cin>>name;
+ int t2run=0,i,j;
+ int v,run=0,s;
+ float run_rate=0;
+    int n;
+    cout<<" press 1........six run"<<endl;
+    cout<<" press 2........for run"<<endl;
+    cout<<" press 3........three run"<<endl;
+    cout<<" press 4........two run"<<endl;
+    cout<<" press 5........one run"<<endl;
+    cout<<" press 6........zero run"<<endl;
+    cout<<" press 7........no ball"<<endl;
+    cout<<" press 8........no ball+one run"<<endl;
+    cout<<" press 9........no ball+two run"<<endl;
+    cout<<" press 10........no ball+three run"<<endl;
+    cout<<" press 11........no ball+four "<<endl;
+    cout<<" press 12........no ball+six"<<endl;
+    cout<<" press 13........wide ball"<<endl;
+    cout<<" press 14........wide ball+one"<<endl;
+    cout<<" press 15........wide ball+two"<<endl;
+    cout<<" press 16........wide ball+three"<<endl;
+    cout<<" press 17........wide ball+four"<<endl;
+   cout<<"how many overs"<<endl<<endl;
+  cin>>v;
+    for(i=1;i<=v;i++){
+         cout<<" FOR OVER "<<i<<endl<<endl;
+            s=i;
+            for(j=1;j<=6;j++)
+        {
+           cout<<"give run"<<endl;
+           cin>>n;
+            if(n==1){
+                cout<<" ball no:"<<j<<endl;
+                cout<<"six runs"<<endl;
+                run=run+6;
+                cout<<"run"<<run<<endl<<endl;
+            }
+            else if(n==2){
+            cout<<" ball no:"<<j<<endl;
+            cout<<"four runs"<<endl;
+                run=run+4;
+          cout<<"run"<<run<<endl<<endl;
+            }
+            else if(n==3){
+                  cout<<" ball no:"<<j<<endl;
+                  cout<<"three runs"<<endl;
+                run=run+3;
+             cout<<"run"<<run<<endl<<endl;
+            }
+            else if(n==4){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"two runs"<<endl;
+                run=run+2;
+               cout<<"run"<<run<<endl<<endl;
+            }
+            else if(n==5){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"one run"<<endl;
+                run=run+1;
+                 cout<<"run"<<run<<endl<<endl;
+            }
+            else if(n==6){
+                cout<<" ball no:"<<j<<endl;
+                cout<<"zero run"<<endl;
+                run=run+0;
+                cout<<"run"<<run<<endl<<endl;
+            }
+            else if(n==7){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"no ball"<<endl;
+                run=run+1;
+               cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==8){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"no ball+1 run"<<endl;
+                run=run+2;
+              cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==9){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"no ball+two runs"<<endl;
+                run=run+3;
+                cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==10){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"no ball+three runs"<<endl;
+                run=run+4;
+              cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==11){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"no ball+four"<<endl;
+                run=run+5;
+                  cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==12){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"no+six runs"<<endl;
+                run=run+7;
+             cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==13){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"wide ball"<<endl;
+                run=run+1;
+             cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==14){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"wide ball+one run"<<endl;
+                run=run+2;
+                  cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==15){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"wide ball+two runs"<<endl;
+                run=run+3;
+                cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==16){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"wide ball+three runs"<<endl;
+                run=run+4;
+                cout<<"run"<<run<<endl<<endl;
+                j--;
+            }
+            else if(n==17){
+                 cout<<" ball no:"<<j<<endl;
+                 cout<<"wide ball+four runs"<<endl;
+                run=run+5;
+                cout<<"run"<<run<<endl<<endl<<endl;
+                j--;
+            }
+else
+    cout<<"out of choice"<<endl;
+    }
+cout<<"After"<<endl<<i<<" over"<<endl<<"run is "<< run<<endl;
+    }
+    t2run=run;
+cout<<endl<<endl<<endl;
+cout<<"total run of this match"<<t2run<<endl<<endl;
+cout<<"over "<<v<<endl;
+cout<<"run rate"<<t2run/v<<endl<<endl;
+ void result();
+}
+ void result(){
+int t1run,t2run;
+cout<<"enter team 1 run"<<endl<<endl;
+cin>>t1run;
+cout<<"enter team 2 run"<<endl<<endl;
+cin>>t2run;
+ if(t1run<t2run){
+ cout<<"team1 is winner"<<endl;
+ }
+ else if(t1run==t2run){
+    cout<<"match draw"<<endl;
+ }
+ else
+    cout<<"team 2 is winner"<<endl;
+ }
+int main(){
+int  n,choice,t,r;
+string strin[1000];
+cout<<"...........................................starting the match............"<<endl<<endl;
+cout<<"................/////////////////////////////going for toss//////////////////////////////.........."<<endl<<endl<<endl<<endl;
+cout<<"enter for calling option"<<endl<<endl<<endl;
+cout<<"for 1 team 1"<<endl;
+cout<<"for 2 team 2"<<endl;
+cin>>choice;
+switch(choice){
+case 1: cout<<"call for team 1 captain"<<endl;
+cout<<" 1 for head"<<endl;
+cout<<"2 for tail"<<endl;
+cin>>t;
+switch(t){
+    case 1: cout<<"HEAD"<<endl;
+break;
+    case 2: cout<<"TAIL"<<endl;
+    break;
+}
+break;
+case 2: cout<<"call for team 2 captain"<<endl;
+cout<<" 1 for head"<<endl;
+cout<<"2 for tail"<<endl;
+cin>>r;
+switch(r){
+    case 1: cout<<"HEAD"<<endl;
+break;
+    case 2: cout<<"TAIL"<<endl;
+    break;
+}
+break;
+}
+        srand(time(0));
+    n = rand() ;
+  if(n%2==0){
+        cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<TAIL<<<<<<<<<<<<<<<"<<endl<<endl<<endl;
+  }
+  else
+   cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<HEAD<<<<<<<<<<<<<<<"<<endl<<endl<<endl;
+cout<<"won the toss option"<<endl;
+cout<<" 1 for team 1"<<endl;
+cout<<" 2 for team 2"<<endl;
+int a,u,p;
+cin>>a;
+switch(a){
+case 1:cout<<"team 1 won the toss and elected to"<<endl;
+cout<<"1  for bat"<<endl;
+cout<<" 2 for ball"<<endl;
+cin>>u;
+switch(u){
+case 1: cout<<"bat"<<endl;
+break;
+case 2:cout<<"ball"<<endl;
+break;
+}
+break;
+case 2:cout<<"team 2 won the toss and elected to "<<endl;
+cout<<"1  for bat"<<endl;
+cout<<" 2 for ball"<<endl;
+cin>>u;
+switch(u){
+case 1: cout<<"bat"<<endl;
+break;
+case 2:cout<<"ball"<<endl;
+break;
+}
+}
+while(1){
+int x;
+cout<<"enter your choice"<<endl;
+cout<<" for toss option"<<endl;
+cout<<"1....for team 1"<<endl;
+cout<<"2....for team 2"<<endl;
+cout<<"3.....result"<<endl;
+cout<<"4.....exit"<<endl;
+cin>>x;
+switch(x){
+case 1:
+team1();
+    break;
+case 2:
+team2();
+case 3:
+result();
+break;
+case 5:exit(0);
+}
+}
+}
